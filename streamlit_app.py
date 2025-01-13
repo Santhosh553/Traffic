@@ -138,7 +138,7 @@ if use_webcam:
         time.sleep(0.1)
 
         # Allow Streamlit to refresh the display
-        st.experimental_rerun()
+        st.rerun()
 else:
     st.write("Enable the webcam to start real-time object detection.")
 st.markdown('</div>', unsafe_allow_html=True)

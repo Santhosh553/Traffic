@@ -4,7 +4,7 @@ import cv2
 import math
 import cvzone
 from ultralytics import YOLO
-from sort import Sort
+from old.sort import Sort
 import time
 
 # Initialize YOLO model
@@ -52,8 +52,8 @@ if uploaded_file is not None:
     totalCounts = {1: [], 2: [], 3: [], 4: []}
 
     # Streamlit buttons for play and pause
-    pause = st.button("Pause Video")
-    play = st.button("Play Video")
+    pause = st.button("Pause Analysis")
+    play = st.button("Continue")
     
     is_paused = False
     stframe = st.empty()  # Empty frame for Streamlit video output
