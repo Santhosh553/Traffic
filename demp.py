@@ -4,7 +4,7 @@ import cv2
 import math
 import cvzone
 from ultralytics import YOLO
-from old.sort import Sort
+from sort import Sort
 import time
 
 # Initialize YOLO model
