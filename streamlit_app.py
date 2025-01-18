@@ -107,7 +107,7 @@ if uploaded_image is not None:
     st.image(image, caption='Uploaded Image', use_column_width=True)
     st.write("Processing...")
     processed_image = process_image(image)
-    st.image(processed_image, caption='Processed Image', use_column_width=True)
+    st.image(processed_image, caption='Processed Image', use_container_width=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Real-Time Webcam Detection Section
@@ -133,7 +133,7 @@ if use_webcam:
 
         # Convert processed image back to RGB for Streamlit display
         processed_image_rgb = cv2.cvtColor(processed_image, cv2.COLOR_BGR2RGB)
-        st.image(processed_image_rgb, caption=f'Webcam (FPS: {fps:.2f})', use_column_width=True)
+        st.image(processed_image_rgb, caption=f'Webcam (FPS: {fps:.2f})', use_container_width=True)
 
         time.sleep(0.1)
 
